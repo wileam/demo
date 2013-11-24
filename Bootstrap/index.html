@@ -101,9 +101,57 @@
 
 		<hr><!-- MY:put hr tag under container to make it centered -->
 	</div>
+
+	<!-- carousel -->
+	<div class="container">
+		<section>
+			<h3>Title</h3>
+
+			<div class="carousel" id="testcarousel">
+
+				<ol class="carousel-indicators">
+					<li data-target="#testcarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#testcarousel" data-slide-to="1"></li>
+					<li data-target="#testcarousel" data-slide-to="2"></li>
+				</ol>
+
+				<div class="carousel-inner">
+					<div class="item active">
+						<blockquote>
+							<p>Smile, breathe and go slowly.</p>
+							<small>Joanna</small>
+						</blockquote>
+					</div>
+					<div class="item">
+						<blockquote>
+							<p>Second item</p>
+							<small>Gary</small>
+						</blockquote>	
+					</div>
+					<div class="item">
+						<blockquote>
+							<p>Third item</p>
+							<small>John</small>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
 	<!-- JavaScript -->
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script>
+		$(document).ready(function() {
+			// remember '' or "" inside the $(), e.g. $('#id');$('.class')
+			// more usage about carousel, see: http://getbootstrap.com/javascript/#carousel(v3) 
+			// http://getbootstrap.com/2.3.2/javascript.html#carousel(v2)
+			$('.carousel').carousel({
+				interval: 5000
+			});
+		});
+	</script>
 
 </body>
 </html>
