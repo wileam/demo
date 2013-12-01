@@ -1,0 +1,17 @@
+/***********************************************************************************************/
+/* Custom Styles */
+/***********************************************************************************************/
+body {
+	padding-top: 5em;
+}
+
+#testcarousel .carousel-indicators {
+  top: -30px;
+}
+
+#testcarousel .carousel-indicators li {
+  background-color: #ccc;
+}
+#testcarousel .carousel-indicators li.active {
+  background-color: black;
+}
