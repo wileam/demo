@@ -5,28 +5,59 @@
 	<title>bootstrap buttons</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
-	<link rel="stylesheet" type="text/css" href="css/custom.css"></head>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+
 <body>
-	<div class="span3 container">
-		<div class="btn-group container" data-toggle="buttons-radio">
-			<button type="button" class="btn btn-info btn-small" value="0">本日</button>
-			<button type="button" class="btn btn-info btn-small" value="1">本周</button>
-			<button type="button" class="btn btn-info btn-small" value="2">本月</button>
-			<button type="button" class="btn btn-info btn-small" value="3">本年</button>
+	<div class="container">
+		<div data-toggle="buttons-radio">
+			<div class="btn-group">
+				<button type="button" class="btn btn-mini active" value="today">本日</button>
+				<button type="button" class="btn btn-mini" value="thisWeek">本周</button>
+				<button type="button" class="btn btn-mini" value="thisMonth">本月</button>
+				<button type="button" class="btn btn-mini" value="thisYear">本年</button>
+			</div>
+		
+			<div class="btn-group">
+				<button type="button" class="btn btn-small" value="previousDay">上日</button>
+				<button type="button" class="btn btn-small" value="previousWeek">上周</button>
+				<button type="button" class="btn btn-small" value="previousMonth">上月</button>
+				<button type="button" class="btn btn-small" value="previousYear">上年</button>
+			</div>		
+		</div>
+		
+		<div class="btn-group" data-toggle="buttons-radio">
+			<button type="button" class="btn btn-mini" value="0">上日</button>
+			<button type="button" class="btn btn-mini" value="1">上周</button>
+			<button type="button" class="btn btn-mini" value="2">上月</button>
+			<button type="button" class="btn btn-mini" value="3">上年</button>
 		</div>
 
 		<hr>
-
-		<div class="btn-group container" data-toggle="buttons-checkbox">
-			<button type="button" class="btn btn-small" value="0">上日</button>
-			<button type="button" class="btn btn-small" value="1">上月</button>
-			<button type="button" class="btn btn-small" value="2">上周</button>
-			<button type="button" class="btn btn-small" value="3">上年</button>
+		
+		<div class="btn-group">
+			<button class="btn"><i class="icon-bar-chart"></i></button>
+			<button class="btn"><i class="icon-star"></i></button>
 		</div>
 
-	</div>
+		<div class="btn-group">
+			<button class="btn btn-small"> <i class="icon-arrow-down"></i></button>
+			<button class="btn btn-small"><i class="icon-arrow-up"></i></button>
+		</div>
 
+		<!-- tooltip -->
+		<button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">Test</button>
+
+		<button class="btn btn-primary">确定</button>
+
+	</div>
 	<!-- scripts -->
 	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery-1.9.1.js"></script>
+	<script>
+	$('.nav-tabs').button()
+		$(".btn").button("toggle").addClass("active")
+	</script>
 </body>
 </html>
