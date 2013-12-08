@@ -1,5 +1,5 @@
 html,body {
-	background: url("light_grey.png");
+	background: url("../img/light_grey.png");
 	height:100%;
 }
 
@@ -20,15 +20,9 @@ html,body {
 	margin-top: 30px;
 }
 
-tr:first-child td {
-	font-size: 62px;
-	color: hsla(0, 50%, 50%, 1);
-}
-
-tr:first-child td:hover {
-	color: black;
-}
-
-.table th, .table td {
-	text-align: center;
-}
+/*@media (max-width: 768px) {
+	#main-content {
+		padding-top: 0;
+		min-height: 0;
+	}
+}*/
