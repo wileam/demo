@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'seedIcon';
-	src:url('fonts/seedIcon.eot');
-	src:url('fonts/seedIcon.eot?#iefix') format('embedded-opentype'),
-		url('fonts/seedIcon.ttf') format('truetype'),
-		url('fonts/seedIcon.woff') format('woff'),
-		url('fonts/seedIcon.svg#seedIcon') format('svg');
+	src:url('../fonts/seedIcon.eot');
+	src:url('../fonts/seedIcon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/seedIcon.ttf') format('truetype'),
+		url('../fonts/seedIcon.woff') format('woff'),
+		url('../fonts/seedIcon.svg#seedIcon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
