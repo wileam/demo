@@ -42,3 +42,8 @@ body {
 .data-down {
     background-color: #61EE37;
 }
+
+.column {
+    display: inline-block;
+    /*width:20%;*/
+}
