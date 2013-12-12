@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Layout</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/seed-iconfont.css">
     <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
@@ -12,25 +14,28 @@
 
     <div class="container">
         <div class="span7">
-            <div class="accordion" id="accordion2">
+            <h3 class="flat-blue"><i class="sicon-seed-water"></i> 耗水量</h3>
+            <hr>
+            <div class="accordion" id="water-widget">
                 <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <div class="column-1">
-                            <span>今日</span>
-                            <span>昨日</span>
+                    <div class="accordion-heading heading-active">
+                        <div class="range">
+                            <div>今日耗水量</div>
+                            <span>昨日耗水量</span>
                         </div>
-                        <div class="column-2">
-                            <span>1100</span>
+                        <div class="data">
+                            <div>1100</div>
                             <span>1300</span>
                         </div>
-                        <div class="column-3 data-down">
-                            <p>test</p>
+                        <div class="percentage data-down">
+                            <div>30% <i class="icon-arrow-down"></i> </div>
                         </div>
-                        <div class="column-4">
-                            <a class="" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">显示趋势</a>
+                        <div class="show-trend">
+                            <div><i class="sicon-chart-area"></i></div>
+                            <span><a class="" data-toggle="collapse" data-parent="#water-widget" href="#water-day-trend">显示趋势</a></span>
                         </div>                    
                     </div>
-                    <div id="collapseOne" class="accordion-body collapse in">
+                    <div id="water-day-trend" class="accordion-body collapse in">
                         <div class="accordion-inner">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                         </div>
@@ -38,21 +43,24 @@
                 </div>
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <div class="column-1">
-                            <p>test</p>
+                        <div class="range">
+                            <div>本月耗水量</div>
+                            <span>去年同期耗水量</span>
                         </div>
-                        <div class="column-2">
-                            <p>test</p>
+                        <div class="data">
+                            <div>11100</div>
+                            <span>昨日</span>
                         </div>
-                        <div class="column-3 data-down">
-                            <p>test</p>
+                        <div class="percentage data-down">
+                            <div>30% <i class="icon-arrow-down"></i> </div>
                         </div>
-                        <div class="column-4">
-                            <a class="" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">显示趋势</a>
+                        <div class="show-trend">
+                            <div><i class="sicon-chart-area"></i></div>
+                            <span><a class="" data-toggle="collapse" data-parent="#water-widget" href="#water-month-trend">显示趋势</a></span>
                         </div>
                         
                     </div>
-                    <div id="collapseTwo" class="accordion-body collapse">
+                    <div id="water-month-trend" class="accordion-body collapse">
                         <div class="accordion-inner">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                         </div>
@@ -60,21 +68,24 @@
                 </div>
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <div class="column-1">
-                            <p>test</p>
+                        <div class="range">
+                            <div>今年耗电量</div>
+                            <span>去年耗电量</span>
                         </div>
-                        <div class="column-2">
-                            <p>test</p>
+                        <div class="data">
+                            <div>1133200</div>
+                            <span>389749823</span>
                         </div>
-                        <div class="column-3 data-up">
-                            <p>test</p>
+                        <div class="percentage data-up">
+                            <div>30% <i class="icon-arrow-up"></i></div>
                         </div>
-                        <div class="column-4">
-                            <a class="" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">显示趋势</a>
+                        <div class="show-trend">
+                            <div><i class="sicon-chart-area"></i></div>
+                            <span><a class="" data-toggle="collapse" data-toggle="collapse" data-parent="#water-widget" href="#water-year-trend">显示趋势</a></span>
                         </div>                     
                         <!-- <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">Collapsible Group Item #3</a> -->
                     </div>
-                    <div id="collapseThree" class="accordion-body collapse">
+                    <div id="water-year-trend" class="accordion-body collapse">
                         <div class="accordion-inner">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                         </div>
