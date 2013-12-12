@@ -1,49 +1,67 @@
 * {
     /*border: 1px solid #BBBDB3;*/
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
     font-size: 1em;
 }
 
-.dashboard-widget-container {
-    display:relative;
+.data-down {
+    background-color: #DBF5F2;
+    border-left:1px solid #B7D4D0;
+    border-right:1px solid #B7D4D0;
 }
-
-    .dashboard-widget-group {
-
-    }
-        .dashboard-day-container {
-            display: relative;
-            height:500px;
-            width:800px;
-            margin:10px;
-        }
-            .dashboard-day-header {
-                display: relative;
-                border:1px solid #BBBDB3
-
-            }
-                .dashboard-header-info, .dashboard-header-data, .dashboard-header-percentage, .dashboard-header-trend {
-                    display: inline-block;
-                    width: 24%;
-                }
-
-                .dashboard-header-info, .dashboard-header-data, .dashboard-header-percentage {
-                    border-right:1px solid #BBBDB3;
-                }
 
 .data-up {
-    background-color: #FF6060;
-    border-left:1px solid #C60000;
-    border-right:1px solid #C60000;
+    background-color: #FDECEE;
+    border-left:1px solid #E3D5D5;
+    border-right:1px solid #E3D5D5;
 }
 
-.data-down {
-    background-color: #61EE37;
-}
-
-.column {
+.column-1 {
     display: inline-block;
-    /*width:20%;*/
+    vertical-align: top;
+    width:29%;
+    border-right: 1px solid hsl(0, 0%, 90%);
+    padding:10px;
 }
+
+.column-2 {
+    display: inline-block;
+    vertical-align: top;
+    width:29%;
+    /*border: 1px solid hsl(0, 0%, 90%);*/
+    padding:10px;    
+}
+
+.column-3 {
+    display: inline-block;
+    vertical-align: top;
+    width:19%;
+    /*background-color: #FF6060;*/
+    border-left:1px solid hsl(0, 0%, 90%);
+    border-right:1px solid hsl(0, 0%, 90%);
+    padding:10px;    
+}
+
+.column-4 {
+    display: inline-block;
+    vertical-align: top;
+    width:19%;
+    /*border: 1px solid #BBBDB3;*/
+    padding:10px;    
+}
+
+.accordion-group {
+    background: #F5F7F6;
+    border-radius:0;
+    margin-bottom: 1em;
+}
+
+.accordion-inner {
+    background-color: #FFF;
+}
+
