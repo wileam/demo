@@ -8,10 +8,11 @@
 body {
     font-size: 1em;
     font-family: "微软雅黑", "STHeiti", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: url("../img/light_grey.png");
 }
 
 .accordion-group {
-    background: #F5F7F6;
+    background: #FFF;
     border-radius:0;
     margin-bottom: 1em;
 }
@@ -117,6 +118,10 @@ body {
 
 .sicon-seed-water, .flat-blue {
   color:#3498db;
+}
+
+.heading-active {
+    background: #F5F7F6; 
 }
 
 /*.span7 {
