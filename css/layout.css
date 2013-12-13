@@ -124,11 +124,18 @@ body {
     background: #F5F7F6; 
 }
 
-/*.span7 {
-    padding:0 5px 0 5px;
-    border:1px dashed #939683;
-}*/
-
 h3 > i {
     font-size: 1.5em;
 }
+
+/* CHARTS */
+/* Stats chart */
+#statsChart {
+  height: 250px;
+  margin-top: 65px; }
+
+/* specific chart styles */
+.legendLabel {
+  font-size: 12px;
+  font-family: "Open Sans", Arial;
+  color: #9da3a9; }

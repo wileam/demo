@@ -37,7 +37,9 @@
                     </div>
                     <div id="water-day-trend" class="accordion-body collapse in">
                         <div class="accordion-inner">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            <div id="statsChart" style="padding: 0px; position: relative;">
+                                    <canvas class="flot-base" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1303px; height: 250px;" width="1303" height="250"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -62,7 +64,9 @@
                     </div>
                     <div id="water-month-trend" class="accordion-body collapse">
                         <div class="accordion-inner">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            <div class="accordion-inner">
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -83,7 +87,6 @@
                             <div><a class="" data-toggle="collapse" data-toggle="collapse" data-parent="#water-widget" href="#water-year-trend"><i class="sicon-chart-area"></i></a></div>
                             <span><a class="" data-toggle="collapse" data-toggle="collapse" data-parent="#water-widget" href="#water-year-trend">显示趋势</a></span>
                         </div>                     
-                        <!-- <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">Collapsible Group Item #3</a> -->
                     </div>
                     <div id="water-year-trend" class="accordion-body collapse">
                         <div class="accordion-inner">
@@ -95,11 +98,138 @@
 
         </div>
     </div>
-    
+
+    <hr>
+
+    <div class="container">
+        <div class="span12">
+            <div id="statsChart" style="padding: 0px; position: relative;">
+                <canvas class="flot-base" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1303px; height: 250px;" width="1303" height="250"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
     <script src="js/jquery-1.9.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-    
+    <script src="js/jquery-ui-1.10.2.custom.min.js"></script>
+    <script src="js/jquery.knob.js"></script>
+    <script src="js/jquery.flot.js"></script>
+    <script src="js/jquery.flot.resize.js"></script>
+    <script src="js/jquery.flot.stack.js"></script>
+    <script src="js/theme.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            // jQuery Knobs
+            $(".knob").knob();
+
+
+
+            // jQuery UI Sliders
+            $(".slider-sample1").slider({
+                value: 100,
+                min: 1,
+                max: 500
+            });
+            $(".slider-sample2").slider({
+                range: "min",
+                value: 130,
+                min: 1,
+                max: 500
+            });
+            $(".slider-sample3").slider({
+                range: true,
+                min: 0,
+                max: 500,
+                values: [ 40, 170 ],
+            });
+
+            
+
+            // jQuery Flot Chart
+            var visits = [[1, 50], [2, 40], [3, 45], [4, 23],[5, 55],[6, 65],[7, 61],[8, 70],[9, 65],[10, 75],[11, 57],[12, 59]];
+            var visitors = [[1, 25], [2, 50], [3, 23], [4, 48],[5, 38],[6, 40],[7, 47],[8, 55],[9, 43],[10,50],[11,47],[12, 39]];
+
+            var plot = $.plot($("#statsChart"),
+                [ { data: visits, label: "Signups"},
+                 { data: visitors, label: "Visits" }], {
+                    series: {
+                        lines: { show: true,
+                                lineWidth: 1,
+                                fill: true, 
+                                fillColor: { colors: [ { opacity: 0.1 }, { opacity: 0.13 } ] }
+                             },
+                        points: { show: true, 
+                                 lineWidth: 2,
+                                 radius: 3
+                             },
+                        shadowSize: 0,
+                        stack: true
+                    },
+                    grid: { hoverable: true, 
+                           clickable: true, 
+                           tickColor: "#f9f9f9",
+                           borderWidth: 0
+                        },
+                    legend: {
+                            // show: false
+                            labelBoxBorderColor: "#fff"
+                        },  
+                    colors: ["#a7b5c5", "#30a0eb"],
+                    xaxis: {
+                        ticks: [[1, "JAN"], [2, "FEB"], [3, "MAR"], [4,"APR"], [5,"MAY"], [6,"JUN"], 
+                               [7,"JUL"], [8,"AUG"], [9,"SEP"], [10,"OCT"], [11,"NOV"], [12,"DEC"]],
+                        font: {
+                            size: 12,
+                            family: "Open Sans, Arial",
+                            variant: "small-caps",
+                            color: "#697695"
+                        }
+                    },
+                    yaxis: {
+                        ticks:3, 
+                        tickDecimals: 0,
+                        font: {size:12, color: "#9da3a9"}
+                    }
+                 });
+
+            function showTooltip(x, y, contents) {
+                $('<div id="tooltip">' + contents + '</div>').css( {
+                    position: 'absolute',
+                    display: 'none',
+                    top: y - 30,
+                    left: x - 50,
+                    color: "#fff",
+                    padding: '2px 5px',
+                    'border-radius': '6px',
+                    'background-color': '#000',
+                    opacity: 0.80
+                }).appendTo("body").fadeIn(200);
+            }
+
+            var previousPoint = null;
+            $("#statsChart").bind("plothover", function (event, pos, item) {
+                if (item) {
+                    if (previousPoint != item.dataIndex) {
+                        previousPoint = item.dataIndex;
+
+                        $("#tooltip").remove();
+                        var x = item.datapoint[0].toFixed(0),
+                            y = item.datapoint[1].toFixed(0);
+
+                        var month = item.series.xaxis.ticks[item.dataIndex].label;
+
+                        showTooltip(item.pageX, item.pageY,
+                                    item.series.label + " of " + month + ": " + y);
+                    }
+                }
+                else {
+                    $("#tooltip").remove();
+                    previousPoint = null;
+                }
+            });
+        });
     </script>
 </body>
 </html>
