@@ -64,9 +64,7 @@
                     </div>
                     <div id="water-month-trend" class="accordion-body collapse">
                         <div class="accordion-inner">
-                            <div class="accordion-inner">
-                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </p>
                         </div>
                     </div>
                 </div>
@@ -90,7 +88,7 @@
                     </div>
                     <div id="water-year-trend" class="accordion-body collapse">
                         <div class="accordion-inner">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            <p>non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
                         </div>
                     </div>
                 </div>
@@ -101,59 +99,28 @@
 
     <hr>
 
-    <div class="container">
-        <div class="span12">
-            <div id="statsChart" style="padding: 0px; position: relative;">
-                <canvas class="flot-base" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1303px; height: 250px;" width="1303" height="250"></canvas>
-            </div>
-        </div>
-    </div>
-
-    <!-- SCRIPTS -->
+    <!-- JAVASCRIPTS -->
     <script src="js/jquery-1.9.1.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-ui-1.10.2.custom.min.js"></script>
-    <script src="js/jquery.knob.js"></script>
+    <!-- // <script src="js/bootstrap.min.js"></script> -->
+    <!-- // <script src="js/jquery-ui-1.10.2.custom.min.js"></script> -->
+    <!-- // <script src="js/jquery.knob.js"></script> -->
     <script src="js/jquery.flot.js"></script>
-    <script src="js/jquery.flot.resize.js"></script>
-    <script src="js/jquery.flot.stack.js"></script>
-    <script src="js/theme.js"></script>
+    <!-- // <script src="js/jquery.flot.resize.js"></script> -->
+    <!-- // <script src="js/jquery.flot.stack.js"></script> -->
+    <!-- // <script src="js/theme.js"></script> -->
     <script type="text/javascript">
         $(function () {
 
             // jQuery Knobs
-            $(".knob").knob();
-
-
-
-            // jQuery UI Sliders
-            $(".slider-sample1").slider({
-                value: 100,
-                min: 1,
-                max: 500
-            });
-            $(".slider-sample2").slider({
-                range: "min",
-                value: 130,
-                min: 1,
-                max: 500
-            });
-            $(".slider-sample3").slider({
-                range: true,
-                min: 0,
-                max: 500,
-                values: [ 40, 170 ],
-            });
-
-            
+            // $(".knob").knob();
 
             // jQuery Flot Chart
-            var visits = [[1, 50], [2, 40], [3, 45], [4, 23],[5, 55],[6, 65],[7, 61],[8, 70],[9, 65],[10, 75],[11, 57],[12, 59]];
-            var visitors = [[1, 25], [2, 50], [3, 23], [4, 48],[5, 38],[6, 40],[7, 47],[8, 55],[9, 43],[10,50],[11,47],[12, 39]];
+            var waterToday = [[1, 50], [2, 40], [3, 45], [4, 23],[5, 55],[6, 65],[7, 61],[8, 70],[9, 65],[10, 75],[11, 57],[12, 59]];
+            var waterYesterday = [[1, 25], [2, 50], [3, 23], [4, 48],[5, 38],[6, 40],[7, 47],[8, 55],[9, 43],[10,50],[11,47],[12, 39]];
 
             var plot = $.plot($("#statsChart"),
-                [ { data: visits, label: "Signups"},
-                 { data: visitors, label: "Visits" }], {
+                [ { data: waterYesterday, label: "昨日"},
+                 { data: waterToday, label: "今日" }], {
                     series: {
                         lines: { show: true,
                                 lineWidth: 1,
@@ -178,8 +145,8 @@
                         },  
                     colors: ["#a7b5c5", "#30a0eb"],
                     xaxis: {
-                        ticks: [[1, "JAN"], [2, "FEB"], [3, "MAR"], [4,"APR"], [5,"MAY"], [6,"JUN"], 
-                               [7,"JUL"], [8,"AUG"], [9,"SEP"], [10,"OCT"], [11,"NOV"], [12,"DEC"]],
+                        ticks: [[1, "1点"], [2, "2点"], [3, "3点"], [4,"4点"], [5,"5点"], [6,"6点"], 
+                               [7,"7点"], [8,"8点"], [9,"9点"], [10,"10点"], [11,"11点"], [12,"12点"]],
                         font: {
                             size: 12,
                             family: "Open Sans, Arial",
@@ -218,10 +185,10 @@
                         var x = item.datapoint[0].toFixed(0),
                             y = item.datapoint[1].toFixed(0);
 
-                        var month = item.series.xaxis.ticks[item.dataIndex].label;
+                        var hour = item.series.xaxis.ticks[item.dataIndex].label;
 
                         showTooltip(item.pageX, item.pageY,
-                                    item.series.label + " of " + month + ": " + y);
+                                    item.series.label + " " + hour + ": " + y);
                     }
                 }
                 else {

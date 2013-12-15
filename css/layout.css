@@ -132,10 +132,11 @@ h3 > i {
 /* Stats chart */
 #statsChart {
   height: 250px;
-  margin-top: 65px; }
+}
 
 /* specific chart styles */
 .legendLabel {
   font-size: 12px;
-  font-family: "Open Sans", Arial;
-  color: #9da3a9; }
+  font-family: "微软雅黑", "STHeiti", "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
+  color: #9da3a9; 
+}
