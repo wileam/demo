@@ -14,7 +14,7 @@ $(function() {
 		 + $("#shadow-slider-3").val() + "px black");	 
 	});
 
-    $('#font-size-slider-reset').click(function(e) {
-        $('.tr:first-child td').css('font-size',"62px");
+    $('#font-size-slider-reset').change(function() {
+        $('.tr:first-child td').css('font-size','62px');
     });
 });

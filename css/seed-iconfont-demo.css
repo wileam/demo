@@ -1,5 +1,6 @@
 html,body {
-	background: url("../img/light_grey.png");
+	/*background: url("../img/light_grey.png");*/
+    margin-bottom: 30px;
 	height:100%;
 }
 
@@ -11,13 +12,14 @@ html,body {
 }
 
 #footer {
+    background-color: white;
     position: fixed;
     bottom: 0;
-    /*width: 100%;*/
+    width: 100%;
 }
 
 .navbar-inner {
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
 input {
@@ -26,11 +28,15 @@ input {
 
 tr:first-child td {
 	font-size: 62px;
-	color: hsla(0, 50%, 50%, 1);
+	color: hsla(200, 50%, 50%, 1);
 }
 
 tr:first-child td:hover {
 	color: black;
+}
+
+.rotate tr:first-child td:hover {
+    
 }
 
 .table th, .table td {
@@ -41,4 +47,8 @@ tr:first-child td:hover {
      float: none;
      margin-left: auto;
      margin-right: auto;
+}
+
+.flat-blue {
+  color:#3498db;
 }
