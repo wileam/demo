@@ -21,8 +21,6 @@
             </div>
         </div>
 
-        <hr>
-
         <div class="row-fluid">
             <ul class="thumbnails">
                 <li class="span3">
@@ -45,13 +43,13 @@
                         <hr>
                         <div class="row-fluid">
                             <div class="span4 center">
-                                <h5 class="text-center">Hue</h5>
+                                <h5 class="text-center">Hue 色调</h5>
                                 <ul class="inline text-center">
                                     <li>
                                         <p>0</p>
                                     </li>
                                     <li>
-                                        <input type="range" class="color-slider" id="color-slider-1" min="0" max="360" value="0">
+                                        <input type="range" class="color-slider" id="color-slider-1" min="0" max="360" value="200">
                                     </li>
                                     <li>
                                         <p>360</p>
@@ -62,7 +60,7 @@
                                 
                             </div>
                             <div class="span4">
-                                <h5 class="text-center">Saturation</h5>
+                                <h5 class="text-center">Saturation 饱和度</h5>
                                 <ul class="inline text-center">
                                     <li>
                                         <p>0</p>
@@ -75,11 +73,10 @@
                                     </li>
                                 </ul>
 
-                                <!-- <p class="text-center"><a href="#" class="btn" id="color-slider-2-reset">Reset</a></p> -->
                                 
                             </div>
                             <div class="span4">
-                                <h5 class="text-center">Lightness</h5>
+                                <h5 class="text-center">Lightness 亮度</h5>
                                 <ul class="inline text-center">
                                     <li>
                                         <p>0</p>
@@ -92,85 +89,164 @@
                                     </li>
                                 </ul>
 
-                                <!-- <p class="text-center"><a href="#" class="btn" id="color-slider-3-reset">Reset</a></p> -->
                             </div>
                         </div>
                     </div>
                 </li>
-                <!-- <li class="span4">
-                    <div class="thumbnail">
-                        <h4 class="text-center">Change the shadow</h4>
-                        <ul class="text-center">
-                            <li><input type="range" class="shadow-slider" id="shadow-slider-1" min="0" max="20" value="0"></li>
-                            <li><input type="range" class="shadow-slider" id="shadow-slider-2" min="0" max="20" value="0"></li>
-                            <li><input type="range" class="shadow-slider" id="shadow-slider-3" min="0" max="20" value="0"></li>
-                        </ul>
-                    </div>
-                </li> -->
             </ul>
-
-            <hr>
-
 
         </div>
         
         <!-- Seed Icon Fonts -->
-        <table class="table">
-            <tbody>
-                <tr>
-                    <td>
-                        <i class="sicon-seed-water"></i>
-                    </td>
-                    <td>
-                        <i class=" sicon-seed-elec"></i>
-                    </td>
-                    <td>
-                        <i class="sicon-seed-gas"></i>
-                    </td>
-                    <td>
-                        <i class="sicon-seed-oil"></i>
-                    </td>
-                    <td>
-                        <i class="sicon-seed-money"></i>
-                    </td>
-                    <td>
-                        <i class="sicon-seed-energy"></i>
-                    </td>
-                    <td>
-                        <i class="sicon-seed-carbon"></i>
-                    </td>
-                    <td>
-                        <i class="sicon-seed-other"></i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>水</td>
-                    <td>电</td>
-                    <td>气</td>
-                    <td>油</td>
-                    <td>钱</td>
-                    <td>能源</td>
-                    <td>碳排放</td>
-                    <td>其他</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <hr>
-
-        <p class="text-center">
-            <a href="" class="btn">reset</a>
-        </p>
-    
-        <!-- footer -->
-        <footer id="footer">
-            <hr>
-            <div class="container">
-                <p class="text-center">&copy; 2013, Developed By Joanna(wileam).</p>              
+        <div class="row">
+            <div class="span6">
+                <table class="table table-hover">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <i class="sicon-seed-water"></i>
+                            </td>
+                            <td>
+                                <i class="sicon-seed-elec"></i>
+                            </td>
+                            <td>
+                                <i class="sicon-seed-gas"></i>
+                            </td>
+                            <td>
+                                <i class="sicon-seed-oil"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>水</td>
+                            <td>电</td>
+                            <td>气</td>
+                            <td>油</td>
+                        </tr>
+                        <tr>
+                            <td>sicon-seed-water</td>
+                            <td>sicon-seed-elec</td>
+                            <td>sicon-seed-gas</td>
+                            <td>sicon-seed-oil</td>
+                        </tr>
+                        <tr>
+                            <td>e636</td>
+                            <td>e63c</td>
+                            <td>e63a</td>
+                            <td>e638</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
-        </footer>
+            <div class="span6">
+                <table class="table table-hover">
+                    <tr>
+                        <td>
+                            <i class="sicon-seed-money"></i>
+                        </td>
+                        <td>
+                            <i class="sicon-seed-energy"></i>
+                        </td>
+                        <td>
+                            <i class="sicon-seed-carbon"></i>
+                        </td>
+                        <td>
+                            <i class="sicon-seed-other"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>钱</td>
+                        <td>能源</td>
+                        <td>碳排放</td>
+                        <td>其他</td>
+                    </tr>
+                    <tr>
+                        <td>sicon-seed-money</td>
+                        <td>sicon-seed-energy</td>
+                        <td>sicon-seed-carbon</td>
+                        <td>sicon-seed-other</td>
+                    </tr>
+                    <tr>
+                        <td>e639</td>
+                        <td>e63b</td>
+                        <td>e63d</td>
+                        <td>e637</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="span6">
+                <table class="table table-hover rotate">
+                    <tr>
+                        <td><i class="sicon-calendar-day sicon-spin"></i></td>
+                        <td><i class="sicon-calendar-week"></i></td>
+                        <td><i class="sicon-calendar-month"></i></td>
+                        <td><i class="sicon-calendar-year"></i></td>
+                    </tr>
+                    <tr>
+                        <td>日</td>
+                        <td>周</td>
+                        <td>月</td>
+                        <td>年</td>
+                    </tr>
+                    <tr>
+                        <td>sicon-cal-day</td>
+                        <td>sicon-cal-week</td>
+                        <td>sicon-cal-month</td>
+                        <td>sicon-cal-year</td>
+                    </tr>
+                    <tr>
+                        <td>e633</td>
+                        <td>e63f</td>
+                        <td>e634</td>
+                        <td>e635</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="span6">
+                <table class="table table-hover">
+                    <tr>
+                        <td><i class="sicon-chart-line"></i></td>
+                        <td><i class="sicon-chart-bar"></i></td>
+                        <td><i class="sicon-chart-area"></i></td>
+                        <td><i class="sicon-chart-pie"></i></td>
+                    </tr>
+                    <tr>
+                        <td>曲线图</td>
+                        <td>柱状图</td>
+                        <td>区域图</td>
+                        <td>饼状图</td>
+                    </tr>
+                    <tr>
+                        <td>sicon-chart-line</td>
+                        <td>sicon-chart-bar</td>
+                        <td>sicon-chart-area</td>
+                        <td>sicon-chart-pie</td>
+                    </tr>
+                    <tr>
+                        <td>e640</td>
+                        <td>e641</td>
+                        <td>e642</td>
+                        <td>e647</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+
+        <p class="text-center">
+            <a href="" class="btn">Reset</a>
+            <!-- <input type="button" value="Reset" class="btn"> -->
+        </p>
+    
     </div>
+
+    <!-- footer -->
+    <footer id="footer">
+            <p class="text-center">&copy; 2013, Developed By Joanna(wileam). WIL<em>dest</em> <em>dr</em>EAM.</p>             
+    </footer>
 
     <!-- javascript -->
     <script src="js/jquery-1.9.1.js"></script>
