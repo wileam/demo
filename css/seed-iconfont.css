@@ -231,6 +231,7 @@ ul.sicons-ul > li .sicon-li {
   line-height: 2em;
   vertical-align: -35%;
 }
+
 .sicon-stack [class^="sicon-"],
 .sicon-stack [class*=" sicon-"] {
   display: block;
