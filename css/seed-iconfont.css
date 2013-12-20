@@ -1,26 +1,27 @@
 @font-face {
-	font-family: 'seedIcon';
-	src:url('../fonts/seedIcon.eot');
-	src:url('../fonts/seedIcon.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/seedIcon.ttf') format('truetype'),
-		url('../fonts/seedIcon.woff') format('woff'),
-		url('../fonts/seedIcon.svg#seedIcon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'seedIcon';
+  src:url('../fonts/seedIcon.eot');/* IE9*/
+  src:url('../fonts/seedIcon.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/seedIcon.ttf') format('truetype'), /* chrome、firefox */
+    url('../fonts/seedIcon.woff') format('woff'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/seedIcon.svg#seedIcon') format('svg'); /*  iOS 4.1- */
+  font-weight: normal;
+  font-style: normal;
 }
 
 [class^="sicon-"], [class*=" sicon-"] {
-	font-family: 'seedIcon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
+  font-family: 'seedIcon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 [class^="sicon-"]:before,
@@ -255,6 +256,7 @@ ul.sicons-ul > li .sicon-li {
   -webkit-animation: spin 2s infinite linear;
   animation: spin 2s infinite linear;
 }
+
 @-moz-keyframes spin {
   0% {
     -moz-transform: rotate(0deg);
@@ -345,239 +347,239 @@ a .sicon-flip-vertical:before {
 
 
 .sicon-cancel:before {
-	content: "\e600";
+  content: "\e600";
 }
 .sicon-gasstation:before {
-	content: "\e601";
+  content: "\e601";
 }
 .sicon-sunrise:before {
-	content: "\e602";
+  content: "\e602";
 }
 .sicon-sun:before {
-	content: "\e603";
+  content: "\e603";
 }
 .sicon-moon:before {
-	content: "\e604";
+  content: "\e604";
 }
 .sicon-sun2:before {
-	content: "\e605";
+  content: "\e605";
 }
 .sicon-windy:before {
-	content: "\e606";
+  content: "\e606";
 }
 .sicon-wind:before {
-	content: "\e607";
+  content: "\e607";
 }
 .sicon-snowflake:before {
-	content: "\e608";
+  content: "\e608";
 }
 .sicon-cloudy:before {
-	content: "\e609";
+  content: "\e609";
 }
 .sicon-cloud:before {
-	content: "\e60a";
+  content: "\e60a";
 }
 .sicon-weather:before {
-	content: "\e60b";
+  content: "\e60b";
 }
 .sicon-weather2:before {
-	content: "\e60c";
+  content: "\e60c";
 }
 .sicon-weather3:before {
-	content: "\e60d";
+  content: "\e60d";
 }
 .sicon-lines:before {
-	content: "\e60e";
+  content: "\e60e";
 }
 .sicon-cloud2:before {
-	content: "\e60f";
+  content: "\e60f";
 }
 .sicon-lightning:before {
-	content: "\e610";
+  content: "\e610";
 }
 .sicon-lightning2:before {
-	content: "\e611";
+  content: "\e611";
 }
 .sicon-rainy:before {
-	content: "\e612";
+  content: "\e612";
 }
 .sicon-rainy2:before {
-	content: "\e613";
+  content: "\e613";
 }
 .sicon-windy2:before {
-	content: "\e614";
+  content: "\e614";
 }
 .sicon-windy3:before {
-	content: "\e615";
+  content: "\e615";
 }
 .sicon-snowy:before {
-	content: "\e616";
+  content: "\e616";
 }
 .sicon-snowy2:before {
-	content: "\e617";
+  content: "\e617";
 }
 .sicon-snowy3:before {
-	content: "\e618";
+  content: "\e618";
 }
 .sicon-weather4:before {
-	content: "\e619";
+  content: "\e619";
 }
 .sicon-cloudy2:before {
-	content: "\e61a";
+  content: "\e61a";
 }
 .sicon-cloud3:before {
-	content: "\e61b";
+  content: "\e61b";
 }
 .sicon-lightning3:before {
-	content: "\e61c";
+  content: "\e61c";
 }
 .sicon-sun3:before {
-	content: "\e61d";
+  content: "\e61d";
 }
 .sicon-moon2:before {
-	content: "\e61e";
+  content: "\e61e";
 }
 .sicon-cloudy3:before {
-	content: "\e61f";
+  content: "\e61f";
 }
 .sicon-cloud4:before {
-	content: "\e620";
+  content: "\e620";
 }
 .sicon-cloud5:before {
-	content: "\e621";
+  content: "\e621";
 }
 .sicon-lightning4:before {
-	content: "\e622";
+  content: "\e622";
 }
 .sicon-rainy3:before {
-	content: "\e623";
+  content: "\e623";
 }
 .sicon-rainy4:before {
-	content: "\e624";
+  content: "\e624";
 }
 .sicon-windy4:before {
-	content: "\e625";
+  content: "\e625";
 }
 .sicon-windy5:before {
-	content: "\e626";
+  content: "\e626";
 }
 .sicon-snowy4:before {
-	content: "\e627";
+  content: "\e627";
 }
 .sicon-snowy5:before {
-	content: "\e628";
+  content: "\e628";
 }
 .sicon-weather5:before {
-	content: "\e629";
+  content: "\e629";
 }
 .sicon-cloudy4:before {
-	content: "\e62a";
+  content: "\e62a";
 }
 .sicon-lightning5:before {
-	content: "\e62b";
+  content: "\e62b";
 }
 .sicon-compass:before {
-	content: "\e62c";
+  content: "\e62c";
 }
 .sicon-none:before {
-	content: "\e62d";
+  content: "\e62d";
 }
 .sicon-Celsius:before {
-	content: "\e62e";
+  content: "\e62e";
 }
 .sicon-Fahrenheit:before {
-	content: "\e62f";
+  content: "\e62f";
 }
 .sicon-temperature2:before {
-	content: "\e630";
+  content: "\e630";
 }
 .sicon-temperature:before {
-	content: "\e631";
+  content: "\e631";
 }
 .sicon-list-nested:before {
-	content: "\e632";
+  content: "\e632";
 }
 .sicon-calendar-day:before {
-	content: "\e633";
+  content: "\e633";
 }
 .sicon-calendar-month:before {
-	content: "\e634";
+  content: "\e634";
 }
 .sicon-seed-water:before {
-	content: "\e636";
+  content: "\e636";
 }
 .sicon-seed-other:before {
-	content: "\e637";
+  content: "\e637";
 }
 .sicon-seed-oil:before {
-	content: "\e638";
+  content: "\e638";
 }
 .sicon-seed-money:before {
-	content: "\e639";
+  content: "\e639";
 }
 .sicon-seed-gas:before {
-	content: "\e63a";
+  content: "\e63a";
 }
 .sicon-seed-energy:before {
-	content: "\e63b";
+  content: "\e63b";
 }
 .sicon-seed-elec:before {
-	content: "\e63c";
+  content: "\e63c";
 }
 .sicon-seed-carbon:before {
-	content: "\e63d";
+  content: "\e63d";
 }
 .sicon-calendar-week:before {
-	content: "\e63f";
+  content: "\e63f";
 }
 .sicon-calendar-year:before {
-	content: "\e635";
+  content: "\e635";
 }
 .sicon-chart-line:before {
-	content: "\e640";
+  content: "\e640";
 }
 .sicon-chart-bar:before {
-	content: "\e641";
+  content: "\e641";
 }
 .sicon-chart-area:before {
-	content: "\e642";
+  content: "\e642";
 }
 .sicon-chart-pie-outline:before {
-	content: "\e643";
+  content: "\e643";
 }
 .sicon-chart-line-outline:before {
-	content: "\e644";
+  content: "\e644";
 }
 .sicon-chart-bar-outline:before {
-	content: "\e645";
+  content: "\e645";
 }
 .sicon-chart-area-outline:before {
-	content: "\e646";
+  content: "\e646";
 }
 .sicon-chart-pie:before {
-	content: "\e647";
+  content: "\e647";
 }
 .sicon-news:before {
-	content: "\e648";
+  content: "\e648";
 }
 .sicon-note:before {
-	content: "\e649";
+  content: "\e649";
 }
 .sicon-chart-pie1:before {
-	content: "\e64a";
+  content: "\e64a";
 }
 .sicon-chart-pie1-ou:before {
-	content: "\e64b";
+  content: "\e64b";
 }
 .sicon-chart-bar1:before {
-	content: "\e64c";
+  content: "\e64c";
 }
 .sicon-chart-bar2:before {
-	content: "\e64d";
+  content: "\e64d";
 }
 .sicon-chart-bar3:before {
-	content: "\e64e";
+  content: "\e64e";
 }
 .sicon-chart-bar4:before {
-	content: "\e64f";
+  content: "\e64f";
 }
