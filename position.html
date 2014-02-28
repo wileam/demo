@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Position - Joanna</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    .navbar {
+      margin-top: 30px;
+    }
+    #wrap-box {
+      border:1px solid #000;
+      background-color: #FFF9A6;
+    }
+    #div1,#div2,#div3 {
+      height:100px;
+      width: 100px;
+      margin:10px;
+      color:#fff;
+      border:1px solid #C0C0C0;
+      vertical-align: middle;
+      text-align: center;
+    }
+    table {
+      vertical-align: bottom;
+      visibility: visible;
+      visibility: hidden;
+    }
+    #div1 {background-color:red;}
+    #div2 {background-color:blue;}
+    #div3 {background-color:green;}
+
+    .float-block {
+      margin-right:50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <h3 class="text-center">CSS Position Demo <small>By Joanna</small></h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-fluid">
+      <div class="span6">
+        <div id="wrap-box">
+          <div id="div1">div1</div>
+          <div id="div2">div2</div>
+          <div id="div3">div3</div>
+        </div>
+      </div>
+
+      <div class="span6">
+        <div class="position-block">
+          <h4>Position</h4>
+          <ul class="inline">
+            <li style="color:#FFF146">
+              box
+            </li>
+            <li>
+              <div class="btn-group" data-toggle="buttons-radio">
+                <button type="button" class="btn" id="boxPosRel">Relative</button>
+                <button type="button" class="btn" id="boxPosAbs">Absolute</button>
+                <button type="button" class="btn" id="boxPosStat">Statics</button>
+              </div>
+            </li>
+          </ul>
+          <ul class="inline">
+            <li style="color:red">
+              div1
+            </li>
+            <li>
+              <div class="btn-group" data-toggle="buttons-radio">
+                <button type="button" class="btn" id="div1PosRel">Relative</button>
+                <button type="button" class="btn" id="div1PosAbs">Absolute</button>
+                <button type="button" class="btn" id="div1PosStat">Statics</button>
+              </div>
+            </li>
+          </ul>
+          <ul class="inline">
+            <li style="color:blue">
+              div2
+            </li>
+            <li>
+              <div class="btn-group" data-toggle="buttons-radio">
+                <button type="button" class="btn" id="div2PosRel">Relative</button>
+                <button type="button" class="btn" id="div2PosAbs">Absolute</button>
+                <button type="button" class="btn" id="div2PosStat">Statics</button>
+              </div>
+            </li>
+          </ul>
+          <ul class="inline">
+            <li style="color:green">
+              div3
+            </li>
+            <li>
+              <div class="btn-group" data-toggle="buttons-radio">
+                <button type="button" class="btn" id="div3PosRel">Relative</button>
+                <button type="button" class="btn" id="div3PosAbs">Absolute</button>
+                <button type="button" class="btn" id="div3PosStat">Statics</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="display-block">
+          <h4>Display</h4>
+          <ul class="inline">
+            <li style="color:#FFF146">
+              box
+            </li>
+            <li>
+              <div class="btn-group" data-toggle="buttons-radio">
+                <button type="button" class="btn" id="boxDispBlock">Block</button>
+                <button type="button" class="btn" id="boxDispInline">Inline</button>
+                <button type="button" class="btn" id="boxDispNone">None</button>
+              </div>
+            </li>
+          </ul>
+          <ul class="inline">
+            <li style="color:red">
+              div1
+            </li>
+            <li>
+              <div class="btn-group" data-toggle="buttons-radio">
+                <button type="button" class="btn" id="div1DispBlock">Block</button>
+                <button type="button" class="btn" id="div1DispInline">Inline</button>
+                <button type="button" class="btn" id="div1DispNone">None</button>
+              </div>
+            </li>
+          </ul>
+          <ul class="inline">
+            <li style="color:blue">
+              div2
+            </li>
+            <li>
+              <div class="btn-group" data-toggle="buttons-radio">
+                <button type="button" class="btn" id="div2DispBlock">Block</button>
+                <button type="button" class="btn" id="div2DispInline">Inline</button>
+                <button type="button" class="btn" id="div2DispNone">None</button>
+              </div>
+            </li>
+          </ul>
+          <ul class="inline">
+            <li style="color:green">
+              div3
+            </li>
+            <li>
+              <div class="btn-group" data-toggle="buttons-radio">
+                <button type="button" class="btn" id="div3DispBlock">Block</button>
+                <button type="button" class="btn" id="div3DispInline">Inline</button>
+                <button type="button" class="btn" id="div3DispNone">None</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="float-block pull-left">
+        <h4>Float</h4>
+        <ul class="inline">
+          <li style="color:#FFF146">
+            box
+          </li>
+          <li>
+            <div class="btn-group" data-toggle="buttons-radio">
+              <button type="button" class="btn" id="boxFloatLeft">left</button>
+              <button type="button" class="btn" id="boxFloatRight">Right</button>
+              <button type="button" class="btn" id="boxFloatNone">None</button>
+            </div>
+          </li>
+        </ul>
+        <ul class="inline">
+          <li style="color:red">
+            div1
+          </li>
+          <li>
+            <div class="btn-group" data-toggle="buttons-radio">
+              <button type="button" class="btn" id="div1FloatLeft">left</button>
+              <button type="button" class="btn" id="div1FloatRight">Right</button>
+              <button type="button" class="btn" id="div1FloatNone">None</button>
+            </div>
+          </li>
+        </ul>
+        <ul class="inline">
+          <li style="color:blue">
+            div2
+          </li>
+          <li>
+            <div class="btn-group" data-toggle="buttons-radio">
+              <button type="button" class="btn" id="div2FloatLeft">left</button>
+              <button type="button" class="btn" id="div2FloatRight">Right</button>
+              <button type="button" class="btn" id="div2FloatNone">None</button>
+            </div>
+          </li>
+        </ul>
+        <ul class="inline">
+          <li style="color:green">
+            div3
+          </li>
+          <li>
+            <div class="btn-group" data-toggle="buttons-radio">
+              <button type="button" class="btn" id="div3FloatLeft">left</button>
+              <button type="button" class="btn" id="div3FloatRight">Right</button>
+              <button type="button" class="btn" id="div3FloatNone">None</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="visib-block pull-left">
+        <h4>Visibility</h4>
+        <ul class="inline">
+          <li style="color:#FFF146">
+            box
+          </li>
+          <li>
+            <div class="btn-group" data-toggle="buttons-radio">
+              <button type="button" class="btn" id="boxVisVis">Visible</button>
+              <button type="button" class="btn" id="boxVisHid">Hidden</button>
+            </div>
+          </li>
+        </ul>
+        <ul class="inline">
+          <li style="color:red">
+            div1
+          </li>
+          <li>
+            <div class="btn-group" data-toggle="buttons-radio">
+              <button type="button" class="btn" id="div1VisVis">Visible</button>
+              <button type="button" class="btn" id="div1VisHid">Hidden</button>
+            </div>
+          </li>
+        </ul>
+        <ul class="inline">
+          <li style="color:blue">
+            div2
+          </li>
+          <li>
+            <div class="btn-group" data-toggle="buttons-radio">
+              <button type="button" class="btn" id="div2VisVis">Visible</button>
+              <button type="button" class="btn" id="div2VisHid">Hidden</button>
+            </div>
+          </li>
+        </ul>
+        <ul class="inline">
+          <li style="color:green">
+            div3
+          </li>
+          <li>
+            <div class="btn-group" data-toggle="buttons-radio">
+              <button type="button" class="btn" id="div3VisVis">Visible</button>
+              <button type="button" class="btn" id="div3VisHid">Hidden</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- javascript -->
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    // buttons events that set position
+    $("#boxPosAbs").click(function(event){setPosAbs("wrap-box");});
+    $("#boxPosRel").click(function(event){setPosRel("wrap-box");});
+    $("#boxPosStat").click(function(event){setPosStat("wrap-box");});
+
+    $("#div1PosAbs").click(function(event){setPosAbs("div1");});
+    $("#div1PosRel").click(function(event){setPosRel("div1");});
+    $("#div1PosStat").click(function(event){setPosStat("div1");});
+
+    $("#div2PosAbs").click(function(event){setPosAbs("div2");});
+    $("#div2PosRel").click(function(event){setPosRel("div2");});
+    $("#div2PosStat").click(function(event){setPosStat("div2");});
+
+    $("#div3PosAbs").click(function(event){setPosAbs("div3");});
+    $("#div3PosRel").click(function(event){setPosRel("div3");});
+    $("#div3PosStat").click(function(event){setPosStat("div3");});
+
+    // buttons events that set display
+    $("#boxDispBlock").click(function(event){setDispBlock("wrap-box");});
+    $("#boxDispInline").click(function(event){setDispBlock("wrap-box");});
+    $("#boxDispNone").click(function(event){setDispNone("wrap-box");});
+
+    $("#div1DispBlock").click(function(event){setDispBlock("div1");});
+    $("#div1DispInline").click(function(event){setDispBlock("div1");});
+    $("#div1DispNone").click(function(event){setDispNone("div1");});
+
+    $("#div2DispBlock").click(function(event){setDispBlock("div2");});
+    $("#div2DispInline").click(function(event){setDispBlock("div2");});
+    $("#div2DispNone").click(function(event){setDispNone("div2");});
+
+    $("#div3DispBlock").click(function(event){setDispBlock("div3");});
+    $("#div3DispInline").click(function(event){setDispBlock("div3");});
+    $("#div3DispNone").click(function(event){setDispNone("div3");});
+
+    // buttons events that set float
+    $("#boxFloatLeft").click(function(event){setFloatLeft("wrap-box");});
+    $("#boxFloatRight").click(function(event){setFloatRight("wrap-box");});
+    $("#boxFloatNone").click(function(event){setFloatNone("wrap-box");});
+
+    $("#div1FloatLeft").click(function(event){setFloatLeft("div1");});
+    $("#div1FloatRight").click(function(event){setFloatRight("div1");});
+    $("#div1FloatNone").click(function(event){setFloatNone("div1");});
+
+    $("#div2FloatLeft").click(function(event){setFloatLeft("div2");});
+    $("#div2FloatRight").click(function(event){setFloatRight("div2");});
+    $("#div2FloatNone").click(function(event){setFloatNone("div2");});
+
+    $("#div3FloatLeft").click(function(event){setFloatLeft("div3");});
+    $("#div3FloatRight").click(function(event){setFloatRight("div3");});
+    $("#div3FloatNone").click(function(event){setFloatNone("div3");});
+
+    // buttons events that set visibility
+    $("#boxVisVis").click(function(event){setVisVis("wrap-box");});
+    $("#boxVisHid").click(function(event){setVisHid("wrap-box");});
+
+    $("#div1VisVis").click(function(event){setVisVis("div1");});
+    $("#div1VisHid").click(function(event){setVisHid("div1");});
+
+    $("#div2VisVis").click(function(event){setVisVis("div2");});
+    $("#div2VisHid").click(function(event){setVisHid("div2");});
+
+    $("#div3VisVis").click(function(event){setVisVis("div3");});
+    $("#div3VisHid").click(function(event){setVisHid("div3");});
+
+    // set position functions
+    function setPosAbs(elemId) {
+      $('#'+elemId).css('position', 'absolute');
+    }
+    function setPosRel(elemId) {
+      $('#'+elemId).css('position', 'relative');
+    }
+    function setPosStat(elemId) {
+      $('#'+elemId).css('position', 'static');
+    }
+
+    // set display functions
+    function setDispBlock(elemId) {
+      $('#'+elemId).css('display', 'block');
+    }
+    function setDispInline(elemId) {
+      $('#'+elemId).css('display', 'inline');
+    }
+    function setDispNone(elemId) {
+      $('#'+elemId).css('display', 'none');
+    }
+
+    // float
+    function setFloatLeft(elemId) {
+      $('#'+elemId).css('float', 'left');
+    }
+    function setFloatRight(elemId) {
+      $('#'+elemId).css('float', 'right');
+    }
+    function setFloatNone(elemId) {
+      $('#'+elemId).css('float', 'none');
+    }
+
+    // set visibility functions
+    function setVisVis(elemId) {
+      $('#'+elemId).css('visibility', 'visible');
+    }
+    function setVisHid(elemId) {
+      $('#'+elemId).css('visibility', 'hidden');
+    }
+  });
+  </script>
+</body>
+</html>
