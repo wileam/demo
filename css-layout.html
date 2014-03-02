@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
   <style>
+    body {
+      font-family: Helvetica,Arial,sans-serif;
+    }
     .navbar {
       /*margin-top: 30px;*/
     }
@@ -40,6 +43,7 @@
       background-color:green;
     }
     .adjust-block {
+      background: #fff;
       position: fixed;
       bottom: 20px;
     }
@@ -122,6 +126,24 @@
               </tr>
             </tbody>
           </table>
+        </div>
+        <div class="rules-block">
+          <h4>Rules:</h4>
+          <ul>
+            <li>
+              If <code>display</code> has the value <code>none</code>, user agents must ignore <code>position</code> and <code>float</code>. In this case, the element generates no box.
+            </li>
+            <li>
+              Otherwise, <code>position</code> has the value <code>absolute</code> or <code>fixed</code>, <code>display</code> is set to <code>block</code> and <code>float</code> is set to <code>none</code>. The position of the box will be determined by the <code>top</code>, <code>right</code>, <code>bottom</code> and <code>left</code> properties and the box's containing block.
+            </li>
+            <li>
+              Otherwise, if <code>float</code> has a value other than <code>none</code>, <code>display</code> is set to <code>block</code> and the box is floated.
+            </li>
+            <li>
+              Otherwise, the remaining <code>display</code> properties apply as specified.
+            </li>
+          </ul>
+          <small class="muted">For more details, see: <a href="http://www.w3.org/TR/CSS2/visuren.html" target="_blank">W3C CSS2</a></small>
         </div>
       </div>
     </div>
@@ -331,7 +353,7 @@
         </ul>
       </div>
       <div class="offset-block">
-        <h4>Offset(100,100)</h4>
+        <h4>Offset(top100,left100)</h4>
         <ul class="inline" style="visibility:hidden">
           <li>Box</li>
         </ul>
