@@ -35,7 +35,7 @@
                         <div class="show-trend">
                             <div><a class="" data-toggle="collapse" data-parent="#water-widget" href="#water-day-trend"><i class="sicon-chart-area"></i></a></div>
                             <span><a class="" data-toggle="collapse" data-parent="#water-widget" href="#water-day-trend">显示趋势</a></span>
-                        </div>                    
+                        </div>
                     </div>
                     <div id="water-day-trend" class="accordion-body collapse in">
                         <div class="accordion-inner">
@@ -62,7 +62,7 @@
                             <div><a class="" data-toggle="collapse" data-parent="#water-widget" href="#water-month-trend"><i class="sicon-chart-area"></i></a></div>
                             <span><a class="" data-toggle="collapse" data-parent="#water-widget" href="#water-month-trend">显示趋势</a></span>
                         </div>
-                        
+
                     </div>
                     <div id="water-month-trend" class="accordion-body collapse">
                         <div class="accordion-inner">
@@ -86,7 +86,7 @@
                         <div class="show-trend">
                             <div><a class="" data-toggle="collapse" data-toggle="collapse" data-parent="#water-widget" href="#water-year-trend"><i class="sicon-chart-area"></i></a></div>
                             <span><a class="" data-toggle="collapse" data-toggle="collapse" data-parent="#water-widget" href="#water-year-trend">显示趋势</a></span>
-                        </div>                     
+                        </div>
                     </div>
                     <div id="water-year-trend" class="accordion-body collapse">
                         <div class="accordion-inner">
@@ -121,28 +121,28 @@
                     series: {
                         lines: { show: true,
                                 lineWidth: 1,
-                                fill: true, 
+                                fill: true,
                                 fillColor: { colors: [ { opacity: 0.1 }, { opacity: 0.13 } ] }
                              },
-                        points: { show: true, 
+                        points: { show: true,
                                  lineWidth: 2,
                                  radius: 3
                              },
                         shadowSize: 0,
                         stack: true
                     },
-                    grid: { hoverable: true, 
-                           clickable: true, 
+                    grid: { hoverable: true,
+                           clickable: true,
                            tickColor: "#f9f9f9",
                            borderWidth: 0
                         },
                     legend: {
                             // show: false
                             labelBoxBorderColor: "#fff"
-                        },  
+                        },
                     colors: ["#a7b5c5", "#30a0eb"],
                     xaxis: {
-                        ticks: [[1, "1点"], [2, "2点"], [3, "3点"], [4,"4点"], [5,"5点"], [6,"6点"], 
+                        ticks: [[1, "1点"], [2, "2点"], [3, "3点"], [4,"4点"], [5,"5点"], [6,"6点"],
                                [7,"7点"], [8,"8点"], [9,"9点"], [10,"10点"], [11,"11点"], [12,"12点"]],
                         font: {
                             size: 12,
@@ -152,7 +152,7 @@
                         }
                     },
                     yaxis: {
-                        ticks:3, 
+                        ticks:3,
                         tickDecimals: 0,
                         font: {size:12, color: "#9da3a9"}
                     }
@@ -194,6 +194,19 @@
                 }
             });
         });
+    </script>
+    <!-- google analytics -->
+    <script>
+        var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-46608608-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
     </script>
 </body>
 </html>
