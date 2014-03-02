@@ -78,6 +78,7 @@
                 <th>Display</th>
                 <th>Position</th>
                 <th>Float</th>
+                <th>Size</th>
                 <th>Offset</th>
                 <th>Position</th>
               </tr>
@@ -88,6 +89,7 @@
                 <td id="showBoxDis"></td>
                 <td id="showBoxPos"></td>
                 <td id="showBoxFloat"></td>
+                <td id="showBoxSize"></td>
                 <td id="showBoxOffset"></td>
                 <td id="showBoxPosVal"></td>
               </tr>
@@ -96,6 +98,7 @@
                 <td id="showDiv1Dis"></td>
                 <td id="showDiv1Pos"></td>
                 <td id="showDiv1Float"></td>
+                <td id="showDiv1Size"></td>
                 <td id="showDiv1Offset"></td>
                 <td id="showDiv1PosVal"></td>
               </tr>
@@ -104,6 +107,7 @@
                 <td id="showDiv2Dis"></td>
                 <td id="showDiv2Pos"></td>
                 <td id="showDiv2Float"></td>
+                <td id="showDiv2Size"></td>
                 <td id="showDiv2Offset"></td>
                 <td id="showDiv2PosVal"></td>
               </tr>
@@ -112,6 +116,7 @@
                 <td id="showDiv3Dis"></td>
                 <td id="showDiv3Pos"></td>
                 <td id="showDiv3Float"></td>
+                <td id="showDiv3Size"></td>
                 <td id="showDiv3Offset"></td>
                 <td id="showDiv3PosVal"></td>
               </tr>
@@ -519,6 +524,7 @@
       $('#showBoxPos').html($('#wrap-box').css('position'));
       $('#showBoxFloat').html($('#wrap-box').css('float'));
       // $('#showBoxZindex').html($('#wrap-box').css('z-index'));
+      $("#showBoxSize").html($("#wrap-box").height() + "x" + $("#wrap-box").width());
       $("#showBoxOffset").html($("#wrap-box").offset().top + ", " + $("#wrap-box").offset().left);
       $("#showBoxPosVal").html($("#wrap-box").position().top + ", " + $("#wrap-box").position().left);
 
@@ -526,6 +532,7 @@
       $('#showDiv1Pos').html($('#div1').css('position'));
       $('#showDiv1Float').html($('#div1').css('float'));
       // $('#showDiv1Zindex').html($('#div1').css('z-index'));
+      $("#showDiv1Size").html($("#div1").height() + "x" + $("#div1").width());
       $("#showDiv1Offset").html($("#div1").offset().top + ", " + $("#div1").offset().left);
       $("#showDiv1PosVal").html($("#div1").position().top + ", " + $("#div1").position().left);
 
@@ -533,6 +540,7 @@
       $('#showDiv2Pos').html($('#div2').css('position'));
       $('#showDiv2Float').html($('#div2').css('float'));
       // $('#showDiv2Zindex').html($('#div2').css('z-index'));
+      $("#showDiv2Size").html($("#div2").height() + "x" + $("#div2").width());
       $("#showDiv2Offset").html($("#div2").offset().top + ", " + $("#div2").offset().left);
       $("#showDiv2PosVal").html($("#div2").position().top + ", " + $("#div2").position().left);
 
@@ -540,6 +548,7 @@
       $('#showDiv3Pos').html($('#div3').css('position'));
       $('#showDiv3Float').html($('#div3').css('float'));
       // $('#showDiv3Zindex').html($('#div3').css('z-index'));
+      $("#showDiv3Size").html($("#div3").height() + "x" + $("#div3").width());
       $("#showDiv3Offset").html($("#div3").offset().top + ", " + $("#div3").offset().left);
       $("#showDiv3PosVal").html($("#div3").position().top + ", " + $("#div3").position().left);
     }
