@@ -23,8 +23,6 @@
       border:1px solid #C0C0C0;
       vertical-align: middle;
       text-align: center;
-      top:100px;
-      left:100px;
     }
     #div1 {
       height:50px;
@@ -45,11 +43,10 @@
       position: fixed;
       bottom: 20px;
     }
-    .float-block, .visib-block, .position-block, .display-block {
+    .float-block, .visib-block, .position-block, .display-block, .offset-block {
+      vertical-align: top;
       display: inline-block;
       margin-right: 20px;
-    }
-    .attr-block {
     }
   </style>
 </head>
@@ -132,10 +129,10 @@
           </li>
           <li>
             <div class="btn-group" data-toggle="buttons-radio">
-              <button type="button" class="btn active" id="boxDispBlock">Block</button>
-              <button type="button" class="btn" id="boxDispInline">Inline</button>
-              <button type="button" class="btn" id="boxDispInlineBlock">Inline-Block</button>
-              <button type="button" class="btn" id="boxDispNone">None</button>
+              <button type="button" class="btn btn-mini active" id="boxDispBlock">Block</button>
+              <button type="button" class="btn btn-mini" id="boxDispInline">Inline</button>
+              <button type="button" class="btn btn-mini" id="boxDispInlineBlock">Inline-Block</button>
+              <button type="button" class="btn btn-mini" id="boxDispNone">None</button>
             </div>
           </li>
         </ul>
@@ -145,10 +142,10 @@
           </li>
           <li>
             <div class="btn-group" data-toggle="buttons-radio">
-              <button type="button" class="btn active" id="div1DispBlock">Block</button>
-              <button type="button" class="btn" id="div1DispInline">Inline</button>
-              <button type="button" class="btn" id="div1DispInlineBlock">Inline-Block</button>
-              <button type="button" class="btn" id="div1DispNone">None</button>
+              <button type="button" class="btn btn-mini active" id="div1DispBlock">Block</button>
+              <button type="button" class="btn btn-mini" id="div1DispInline">Inline</button>
+              <button type="button" class="btn btn-mini" id="div1DispInlineBlock">Inline-Block</button>
+              <button type="button" class="btn btn-mini" id="div1DispNone">None</button>
             </div>
           </li>
         </ul>
@@ -158,10 +155,10 @@
           </li>
           <li>
             <div class="btn-group" data-toggle="buttons-radio">
-              <button type="button" class="btn active" id="div2DispBlock">Block</button>
-              <button type="button" class="btn" id="div2DispInline">Inline</button>
-              <button type="button" class="btn" id="div2DispInlineBlock">Inline-Block</button>
-              <button type="button" class="btn" id="div2DispNone">None</button>
+              <button type="button" class="btn btn-mini active" id="div2DispBlock">Block</button>
+              <button type="button" class="btn btn-mini" id="div2DispInline">Inline</button>
+              <button type="button" class="btn btn-mini" id="div2DispInlineBlock">Inline-Block</button>
+              <button type="button" class="btn btn-mini" id="div2DispNone">None</button>
             </div>
           </li>
         </ul>
@@ -171,10 +168,10 @@
           </li>
           <li>
             <div class="btn-group" data-toggle="buttons-radio">
-              <button type="button" class="btn active" id="div3DispBlock">Block</button>
-              <button type="button" class="btn" id="div3DispInline">Inline</button>
-              <button type="button" class="btn" id="div3DispInlineBlock">Inline-Block</button>
-              <button type="button" class="btn" id="div3DispNone">None</button>
+              <button type="button" class="btn btn-mini active" id="div3DispBlock">Block</button>
+              <button type="button" class="btn btn-mini" id="div3DispInline">Inline</button>
+              <button type="button" class="btn btn-mini" id="div3DispInlineBlock">Inline-Block</button>
+              <button type="button" class="btn btn-mini" id="div3DispNone">None</button>
             </div>
           </li>
         </ul>
@@ -187,9 +184,9 @@
           </li>
           <li>
             <div class="btn-group" data-toggle="buttons-radio">
-              <button type="button" class="btn" id="boxPosRel">Relative</button>
-              <button type="button" class="btn" id="boxPosAbs">Absolute</button>
-              <button type="button" class="btn active" id="boxPosStat">Static</button>
+              <button type="button" class="btn btn-mini" id="boxPosRel">Relative</button>
+              <button type="button" class="btn btn-mini" id="boxPosAbs">Absolute</button>
+              <button type="button" class="btn btn-mini active" id="boxPosStat">Static</button>
             </div>
           </li>
         </ul>
@@ -199,9 +196,9 @@
           </li>
           <li>
             <div class="btn-group" data-toggle="buttons-radio">
-              <button type="button" class="btn" id="div1PosRel">Relative</button>
-              <button type="button" class="btn" id="div1PosAbs">Absolute</button>
-              <button type="button" class="btn active" id="div1PosStat">Static</button>
+              <button type="button" class="btn btn-mini" id="div1PosRel">Relative</button>
+              <button type="button" class="btn btn-mini" id="div1PosAbs">Absolute</button>
+              <button type="button" class="btn btn-mini active" id="div1PosStat">Static</button>
             </div>
           </li>
         </ul>
@@ -211,9 +208,9 @@
           </li>
           <li>
             <div class="btn-group" data-toggle="buttons-radio">
-              <button type="button" class="btn" id="div2PosRel">Relative</button>
-              <button type="button" class="btn" id="div2PosAbs">Absolute</button>
-              <button type="button" class="btn active" id="div2PosStat">Static</button>
+              <button type="button" class="btn btn-mini" id="div2PosRel">Relative</button>
+              <button type="button" class="btn btn-mini" id="div2PosAbs">Absolute</button>
+              <button type="button" class="btn btn-mini active" id="div2PosStat">Static</button>
             </div>
           </li>
         </ul>
@@ -223,9 +220,9 @@
           </li>
           <li>
             <div class="btn-group" data-toggle="buttons-radio">
-              <button type="button" class="btn" id="div3PosRel">Relative</button>
-              <button type="button" class="btn" id="div3PosAbs">Absolute</button>
-              <button type="button" class="btn active" id="div3PosStat">Static</button>
+              <button type="button" class="btn btn-mini" id="div3PosRel">Relative</button>
+              <button type="button" class="btn btn-mini" id="div3PosAbs">Absolute</button>
+              <button type="button" class="btn btn-mini active" id="div3PosStat">Static</button>
             </div>
           </li>
         </ul>
@@ -238,9 +235,9 @@
           </li>
           <li>
             <div class="btn-group" data-toggle="buttons-radio">
-              <button type="button" class="btn" id="boxFloatLeft">left</button>
-              <button type="button" class="btn" id="boxFloatRight">Right</button>
-              <button type="button" class="btn active" id="boxFloatNone">None</button>
+              <button type="button" class="btn btn-mini" id="boxFloatLeft">left</button>
+              <button type="button" class="btn btn-mini" id="boxFloatRight">Right</button>
+              <button type="button" class="btn btn-mini active" id="boxFloatNone">None</button>
             </div>
           </li>
         </ul>
@@ -250,9 +247,9 @@
           </li>
           <li>
             <div class="btn-group" data-toggle="buttons-radio">
-              <button type="button" class="btn" id="div1FloatLeft">left</button>
-              <button type="button" class="btn" id="div1FloatRight">Right</button>
-              <button type="button" class="btn active" id="div1FloatNone">None</button>
+              <button type="button" class="btn btn-mini" id="div1FloatLeft">left</button>
+              <button type="button" class="btn btn-mini" id="div1FloatRight">Right</button>
+              <button type="button" class="btn btn-mini active" id="div1FloatNone">None</button>
             </div>
           </li>
         </ul>
@@ -262,9 +259,9 @@
           </li>
           <li>
             <div class="btn-group" data-toggle="buttons-radio">
-              <button type="button" class="btn" id="div2FloatLeft">left</button>
-              <button type="button" class="btn" id="div2FloatRight">Right</button>
-              <button type="button" class="btn active" id="div2FloatNone">None</button>
+              <button type="button" class="btn btn-mini" id="div2FloatLeft">left</button>
+              <button type="button" class="btn btn-mini" id="div2FloatRight">Right</button>
+              <button type="button" class="btn btn-mini active" id="div2FloatNone">None</button>
             </div>
           </li>
         </ul>
@@ -274,9 +271,9 @@
           </li>
           <li>
             <div class="btn-group" data-toggle="buttons-radio">
-              <button type="button" class="btn" id="div3FloatLeft">left</button>
-              <button type="button" class="btn" id="div3FloatRight">Right</button>
-              <button type="button" class="btn active" id="div3FloatNone">None</button>
+              <button type="button" class="btn btn-mini" id="div3FloatLeft">left</button>
+              <button type="button" class="btn btn-mini" id="div3FloatRight">Right</button>
+              <button type="button" class="btn btn-mini active" id="div3FloatNone">None</button>
             </div>
           </li>
         </ul>
@@ -289,8 +286,8 @@
           </li>
           <li>
             <div class="btn-group" data-toggle="buttons-radio">
-              <button type="button" class="btn" id="boxVisVis">Visible</button>
-              <button type="button" class="btn" id="boxVisHid">Hidden</button>
+              <button type="button" class="btn btn-mini" id="boxVisVis">Visible</button>
+              <button type="button" class="btn btn-mini" id="boxVisHid">Hidden</button>
             </div>
           </li>
         </ul>
@@ -300,8 +297,8 @@
           </li>
           <li>
             <div class="btn-group" data-toggle="buttons-radio">
-              <button type="button" class="btn" id="div1VisVis">Visible</button>
-              <button type="button" class="btn" id="div1VisHid">Hidden</button>
+              <button type="button" class="btn btn-mini" id="div1VisVis">Visible</button>
+              <button type="button" class="btn btn-mini" id="div1VisHid">Hidden</button>
             </div>
           </li>
         </ul>
@@ -311,8 +308,8 @@
           </li>
           <li>
             <div class="btn-group" data-toggle="buttons-radio">
-              <button type="button" class="btn" id="div2VisVis">Visible</button>
-              <button type="button" class="btn" id="div2VisHid">Hidden</button>
+              <button type="button" class="btn btn-mini" id="div2VisVis">Visible</button>
+              <button type="button" class="btn btn-mini" id="div2VisHid">Hidden</button>
             </div>
           </li>
         </ul>
@@ -322,8 +319,41 @@
           </li>
           <li>
             <div class="btn-group" data-toggle="buttons-radio">
-              <button type="button" class="btn" id="div3VisVis">Visible</button>
-              <button type="button" class="btn" id="div3VisHid">Hidden</button>
+              <button type="button" class="btn btn-mini" id="div3VisVis">Visible</button>
+              <button type="button" class="btn btn-mini" id="div3VisHid">Hidden</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="offset-block">
+        <h4>Offset(100,100)</h4>
+        <ul class="inline" style="visibility:hidden">
+          <li>Box</li>
+        </ul>
+        <ul class="inline">
+          <li>Div1</li>
+          <li>
+            <div class="btn-group" data-toggle="buttons-radio">
+              <button type="button" class="btn btn-mini" id="div1OffsetTrue">Yes</button>
+              <button type="button" class="btn btn-mini active" id="div1OffsetFalse">No</button>
+            </div>
+          </li>
+        </ul>
+        <ul class="inline">
+          <li>Div2</li>
+          <li>
+            <div class="btn-group" data-toggle="buttons-radio">
+              <button type="button" class="btn btn-mini" id="div2OffsetTrue">Yes</button>
+              <button type="button" class="btn btn-mini active" id="div2OffsetFalse">No</button>
+            </div>
+          </li>
+        </ul>
+        <ul class="inline">
+          <li>Div3</li>
+          <li>
+            <div class="btn-group" data-toggle="buttons-radio">
+              <button type="button" class="btn btn-mini" id="div3OffsetTrue">Yes</button>
+              <button type="button" class="btn btn-mini active" id="div3OffsetFalse">No</button>
             </div>
           </li>
         </ul>
@@ -404,6 +434,13 @@
     $("#div3VisVis").click(function(event){setVisVis("div3");});
     $("#div3VisHid").click(function(event){setVisHid("div3");});
 
+    // buttons events that set Offset
+    $("#div1OffsetTrue").click(function(event){setOffsetTrue("div1");})
+    $("#div1OffsetFalse").click(function(event){setOffsetFalse("div1");})
+    $("#div2OffsetTrue").click(function(event){setOffsetTrue("div2");})
+    $("#div2OffsetFalse").click(function(event){setOffsetFalse("div2");})
+    $("#div3OffsetTrue").click(function(event){setOffsetTrue("div3");})
+    $("#div3OffsetFalse").click(function(event){setOffsetFalse("div3");})
     // set position functions
     function setPosAbs(elemId) {
       $('#'+elemId).css('position', 'absolute');
@@ -457,6 +494,22 @@
     }
     function setVisHid(elemId) {
       $('#'+elemId).css('visibility', 'hidden');
+      showAttr();
+    }
+
+    function setOffsetTrue(elemId) {
+      $('#'+elemId).css({
+        top: '100px',
+        left: '100px'
+      });
+      showAttr();
+    }
+
+    function setOffsetFalse(elemId) {
+      $('#'+elemId).css({
+        top: '0',
+        left: '0'
+      });;
       showAttr();
     }
 
