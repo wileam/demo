@@ -21,11 +21,13 @@
     }
     #div1,#div2,#div3 {
       margin:10px;
-      padding:10px;
       color:#fff;
       border:1px solid #C0C0C0;
       vertical-align: middle;
       text-align: center;
+    }
+    .table {
+      font-size: 1em;
     }
     #div1 {
       height:50px;
@@ -44,13 +46,17 @@
     }
     .adjust-block {
       background: #fff;
-      position: fixed;
-      bottom: 20px;
     }
     .float-block, .visib-block, .position-block, .display-block, .offset-block {
       vertical-align: top;
       display: inline-block;
       margin-right: 20px;
+    }
+    .rules-block {
+      margin-top: 0;
+    }
+    .demo-block {
+      height:400px;
     }
   </style>
 </head>
@@ -65,7 +71,7 @@
     </div>
 
     <div class="row-fluid">
-      <div class="span6">
+      <div class="span6 demo-block">
         <div id="wrap-box">
           <div id="div1">div1</div>
           <div id="div2">div2</div>
@@ -75,7 +81,7 @@
 
       <div class="span6">
         <div class="attr-block">
-          <table class="table">
+          <table class="table table-narrow">
             <thead>
               <tr>
                 <th>#</th>
@@ -128,7 +134,7 @@
           </table>
         </div>
         <div class="rules-block">
-          <h4>Rules:</h4>
+          <strong>Rules:</strong>
           <ul>
             <li>
               If <code>display</code> has the value <code>none</code>, user agents must ignore <code>position</code> and <code>float</code>. In this case, the element generates no box.
@@ -356,7 +362,7 @@
         </ul>
       </div>
       <div class="offset-block">
-        <h4>Offset(top100,left100)</h4>
+        <h4>Offset(80,80)</h4>
         <ul class="inline" style="visibility:hidden">
           <li>Box</li>
         </ul>
@@ -529,8 +535,8 @@
 
     function setOffsetTrue(elemId) {
       $('#'+elemId).css({
-        top: '100px',
-        left: '100px'
+        top: '80px',
+        left: '80px'
       });
       showAttr();
     }
