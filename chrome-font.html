@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <title>Chrome min font size</title>
     <style>
-        /** {
+        .adjust-none p {
             -webkit-text-size-adjust: none;
-        }*/
+        }
+
+        /**
+         * text-size-adjust
+         * https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
+         *
+         * Not supported any more.
+         */
     </style>
 </head>
 <body>
-    <p style="font-size:6px">size:6px</p>
-    <p style="font-size:7px">size:7px</p>
-    <p style="font-size:8px">size:8px</p>
-    <p style="font-size:9px">size:9px</p>
+<div class="default">
+    <h2>Default</h2>
+    <p style="font-size:6px">size:06px</p>
+    <p style="font-size:7px">size:07px</p>
+    <p style="font-size:8px">size:08px</p>
+    <p style="font-size:9px">size:09px</p>
     <p style="font-size:10px">size:10px</p>
     <p style="font-size:11px">size:11px</p>
     <p style="font-size:12px">size:12px</p>
@@ -21,5 +30,23 @@
     <p style="font-size:14px">size:14px</p>
     <p style="font-size:15px">size:15px</p>
     <p style="font-size:16px">size:16px</p>
+</div>
+
+<div class="adjust-none">
+    <h2>Adjust none</h2>
+    <p style="font-size:6px">size:06px</p>
+    <p style="font-size:7px">size:07px</p>
+    <p style="font-size:8px">size:08px</p>
+    <p style="font-size:9px">size:09px</p>
+    <p style="font-size:10px">size:10px</p>
+    <p style="font-size:11px">size:11px</p>
+    <p style="font-size:12px">size:12px</p>
+    <p style="font-size:13px">size:13px</p>
+    <p style="font-size:14px">size:14px</p>
+    <p style="font-size:15px">size:15px</p>
+    <p style="font-size:16px">size:16px</p>
+</div>
+
+
 </body>
 </html>
